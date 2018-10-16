@@ -44,7 +44,7 @@ $base-font-size: 1em;
 $base-line-height: 1.5;
 $header-line-height: 1;
 
-body { margin: 0; padding: 0; }
+body { margin: 0; padding: 0; font-family: "aleolight", serif; }
 ul { list-style: none; margin: 0; padding: 0; }
 img { width: 100%; vertical-align: middle; border-style: none; image-rendering: -webkit-optimize-contrast; }
 input { border: none; }
@@ -52,12 +52,102 @@ input:focus { outline: none; }
 p { margin: 0;  font-size: 1.05em; }
 a { color: inherit; text-decoration: none; background-color: transparent; }
 a:hover { text-decoration: none; }
-h1 { font-family: "aleolight"; }
 
 
 
+//header
+
+header {
+      background-color: $blue;
+      z-index: 20;
+
+      .navbar {
+            padding-left: 0;
+            padding-right: 0;
+
+            .navbar-brand { display: none; }
+
+            .social {
+                  margin-right: auto;
+
+                  .nav-item {
+                        display: inline-block;
+
+                        .social-link {
 
 
+                              .social-icon {
+                                    width: 30px;
+                                    height: 28px;
+                              }
+
+                        }
+                        .social-link svg:hover .iconHover {
+                              fill: #28c6ff;
+                        }
+                  }
+
+            }
+
+            .menu {
+                  font-size: 1.375em;
+
+                  .nav-link {
+                        color: $white;
+
+                        &:hover {
+                              color: $yellow;
+                              text-decoration: underline;
+                        }
+                  }
+            }
+
+            .navbar-toggler {
+                  z-index: 21;
+            }
+
+            .navbar-collapse.show {
+                  top: 0;
+            }
+      }
+
+} //end header
+
+
+//main
+
+      //section.showcase
+      .showcase {}
+      //end section.showcase
+
+      //section.leadText
+      .leadText {
+
+      }
+      //end section.leadText
+
+      //section.counter
+      .counter {}
+      //end section.counter
+
+      //section.dontMiss
+      .dontMiss {}
+      //end section.dontMiss
+
+      //section.article
+      .article {}
+      //end section.article
+
+      //section.sponsors
+      .sponsors {}
+      //end section.sponsors
+
+//end main
+
+//footer
+footer {
+
+} //endfooter
 
 
 
@@ -100,7 +190,49 @@ h1 { font-family: "aleolight"; }
 
 @media #{$mq-max-small} {  }
 
-@media #{$mq-max-medium} {  }
+@media #{$mq-max-medium} {
+
+header {
+      .navbar {
+            .navbar-brand { display: block; z-index: 21; }
+
+            .navbar-collapse {
+                  position: fixed;
+                  display: flex;
+                  flex-direction: column-reverse;
+                  top: -100vh;
+                  left: 0;
+                  width: 100%;
+                  height: 100vh;
+                  padding-top: 15vh;
+                  justify-content: center;
+                  text-align: center;
+                  background-color: rgba(0, 0, 0, 0.95);
+                  z-index: 1;
+                  transition: top .1s ease;
+                  -webkit-transition: top .1s ease;
+                  overflow: hidden;
+
+                        .social {
+                              .nav-item { padding: 0 0.5rem; }
+                        }
+                        .menu {
+
+                        }
+
+            }
+
+            .navbar-nav {
+                  padding-top: 3rem;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+            }
+      }
+}
+
+
+}
 
 @media #{$mq-max-large} {  }
 
