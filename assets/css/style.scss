@@ -1,0 +1,142 @@
+
+$white: #fff;
+$grey: #9bb1b6;
+$cyan: #28c6ff;
+$blue: #003065;
+$yellow: #fbfb00;
+
+// Breakpoints
+$bp-xsmall: 36em; // 576px
+$bp-small: 48em; // 768px
+$bp-medium: 61.9375em; // 991px
+$bp-large: 75em; // 1200px
+$bp-HDPlus: 100em; // 1600px
+$bp-FHD: 120em; // 1920px
+$bp-QHD: 160em; // 2560px
+$bp-4k-UHD: 240em; // 3840px
+
+// mediaQueries-maxWidth-breakPoints
+$mq-max-xsmall: "(max-width: #{$bp-xsmall})";
+$mq-max-small: "(max-width: #{$bp-small})";
+$mq-max-medium: "(max-width: #{$bp-medium})";
+$mq-max-large: "(max-width: #{$bp-large})";
+$mq-max-HDPlus: "(max-width: #{$bp-HDPlus})";
+$mq-max-FHD: "(max-width: #{$bp-FHD})";
+$mq-max-QHD: "(max-width: #{$bp-QHD})";
+$mq-max-4k-UHD: "(max-width: #{$bp-4k-UHD})";
+$mq-max-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+// mediaQueries-minWidth-breakPoints
+$mq-min-xsmall: "(min-width: #{$bp-xsmall})";
+$mq-min-small: "(min-width: #{$bp-small})";
+$mq-min-medium: "(min-width: #{$bp-medium})";
+$mq-min-large: "(min-width: #{$bp-large})";
+$mq-min-HDPlus: "(min-width: #{$bp-HDPlus})";
+$mq-min-FHD: "(min-width: #{$bp-FHD})";
+$mq-min-QHD: "(min-width: #{$bp-QHD})";
+$mq-min-4k-UHD: "(min-width: #{$bp-4k-UHD})";
+$mq-min-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+// Font-Size
+$base-font-size: 1em;
+
+// Line-Height
+$base-line-height: 1.5;
+$header-line-height: 1;
+
+body { margin: 0; padding: 0; }
+ul { list-style: none; margin: 0; padding: 0; }
+img { width: 100%; vertical-align: middle; border-style: none; image-rendering: -webkit-optimize-contrast; }
+input { border: none; }
+input:focus { outline: none; }
+p { margin: 0;  font-size: 1.05em; }
+a { color: inherit; text-decoration: none; background-color: transparent; }
+a:hover { text-decoration: none; }
+h1 { font-family: "aleolight"; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERIES
+
+// **************** Media MAX-WIDTH *******************
+
+@media #{$mq-max-xsmall} {  }
+
+@media #{$mq-max-small} {  }
+
+@media #{$mq-max-medium} {  }
+
+@media #{$mq-max-large} {  }
+
+@media #{$mq-max-HDPlus} {  }
+
+@media #{$mq-max-FHD} {  }
+
+@media #{$mq-max-QHD} {  }
+
+@media #{$mq-max-4k-UHD} {  }
+
+@media #{$mq-max-retina} {  }
+
+
+
+// **************** Media MIN-WIDTH *******************
+@media #{$mq-min-xsmall} {  }
+
+@media #{$mq-min-small} {  }
+
+@media #{$mq-min-medium} {  }
+
+@media #{$mq-min-large} {  }
+
+
+@media #{$mq-min-HDPlus} {
+      .container {
+            max-width: 1430px;
+      }
+ }
+@media #{$mq-min-FHD} {  }
+
+@media #{$mq-min-QHD} {  }
+
+@media #{$mq-min-4k-UHD} {  }
+
+@media #{$mq-min-retina} {  }
+
+
