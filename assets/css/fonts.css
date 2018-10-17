@@ -1,21 +1,25 @@
 @font-face {
-   font-family: 'aleolight';
+   font-family: 'aleo-light';
    src: url('../fonts/Aleo-Light.otf') format("opentype");
 }
 
 @font-face {
-   font-family: 'aleoregular';
+   font-family: 'aleo-regular';
    src: url('../fonts/Aleo-Regular.otf') format("opentype");
 }
 
 @font-face {
-   font-family: 'aleobold';
+   font-family: 'aleo-bold';
    src: url('../fonts/Aleo-Bold.otf') format("opentype");
 }
 
 @font-face {
-   font-family: 'allerDisplay';
+   font-family: 'aller-display';
    src: url('../fonts/AllerDisplay.ttf') format("truetype");
 }
 
+@font-face {
+   font-family: 'aller-bold';
+   src: url('../fonts/Aller_Bd.ttf') format("truetype");
+}
 
