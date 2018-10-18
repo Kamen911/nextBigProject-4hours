@@ -1,4 +1,16 @@
+//Jquery ******************
+(function($) {
+   $(document).on("ready", function() {
 
+      // toggle class on hamburgegr to overflow:hidden on body
+      $(".navbar-toggler").on("click", function() {
+         $("body").toggleClass("hamburger-on");
+      });
+
+   });
+})(jQuery);
+
+// JavaScript ******************
 
 // Counter
 function getTimeRemaining(endtime) {
@@ -39,3 +51,6 @@ function initializeClock(id, endtime) {
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 
 initializeClock('clockdiv', deadline);
+
+
+
